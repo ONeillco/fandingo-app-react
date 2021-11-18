@@ -1,8 +1,10 @@
 import React, {useEffect, useState} from 'react'
 import DogCard from './DogCard'
 
+
 const DogList = () => {
   const [ dogs, setDogs ] = useState([])
+  
 
   useEffect(() => {
     fetch(`http://localhost:9393/dogs`)
@@ -21,7 +23,7 @@ const DogList = () => {
     }
 
     const dogDeeds = dogs.map((dog, index) => <DogCard key={index} dog={dog} deleteDog={ deleteDog } />)
-    
+
 
   return (
     <div>
