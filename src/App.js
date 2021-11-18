@@ -6,6 +6,7 @@ import DogList from './components/DogList';
 import DeedList from './components/DeedList';
 import DogHouse from './components/DogHouse';
 import ErrorPage from './components/ErrorPage';
+import AddDog from './components/AddDog';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <Route path="/dogs" element={<DogList />} />
       <Route path="/deeds" element={<DeedList />} />
       <Route element={<ErrorPage />} />
+      <Route path="/dogs/add" element={<AddDog />} />
 
 
       </Routes>
