@@ -5,6 +5,7 @@ import Nav from './components/Nav';
 import DogList from './components/DogList';
 import DeedList from './components/DeedList';
 import DogHouse from './components/DogHouse';
+import ErrorPage from './components/ErrorPage';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <Route path="/" element={<DogHouse />} /> 
       <Route path="/dogs" element={<DogList />} />
       <Route path="/deeds" element={<DeedList />} />
+      <Route element={<ErrorPage />} />
 
 
       </Routes>
